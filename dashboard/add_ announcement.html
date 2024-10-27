@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Petrona:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/assets/bootstrap-icons-1.10.3/bootstrap-icons.css">
+    <link rel="stylesheet" href="../public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/assets/css/main.css">
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" href="">
+    <title>L'Aura Natur'elle - Mes annonces</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-dark mainNav navbar-expand-xl">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="../index.html"><img
+                        src="../public/assets/img/logos/logo.webp" alt="Logo" class="d-inline-block me-3">L'Aura
+                    Natur'elle</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end offcanvasColor" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand offcanvas-title d-flex align-items-center" href="../index.html"
+                            id="offcanvasDarkNavbarLabel"><img src="../public/assets/img/logos/logo.webp" alt="Logo"
+                                class="d-inline-block me-3">L'Aura Natur'elle</a>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav my-auto">
+                            <li class="nav-item drop-menu mx-1 mx-xl-3 mx-xxl-4 my-2 my-xl-0">
+                                <a class="nav-link header-link" href="../main/services_categories.html">
+                                    Prestations
+                                </a>
+                                <ul class="drop-links d-none">
+                                    <li><a href="../main/services_lines.html" class="ps-3">Epilations</a></li>
+                                    <li><a href="../main/services_lines.html" class="ps-3">Soins du visage</a></li>
+                                    <li><a href="../main/services_lines.html" class="ps-3">Soins du corps</a></li>
+                                    <li><a href="../main/services.html" class="ps-3">Soins des mains</a></li>
+                                    <li><a href="../main/services.html" class="ps-3">Soins des pieds</a></li>
+                                    <li><a href="../main/services.html" class="ps-3">Modelage (Massage)</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-1 mx-xl-3 mx-xxl-4 my-2 my-xl-0">
+                                <a class="nav-link header-link" href="../main/gift_card.html">Carte cadeaux</a>
+                            </li>
+                            <li class="nav-item mx-1 mx-xl-3 mx-xxl-4 my-2 my-xl-0">
+                                <a class="nav-link header-link" href="../main/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item mx-1 mx-xxl-3 my-2 my-xl-0">
+                                <a class="nav-link dashboardLink active px-4" href="../dashboard/account.html"
+                                    aria-current="page">Gestion</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========================================================================================================================================================================== -->
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <main>
+        <div class="container-fluid px-0">
+
+            <div class="row justify-content-around mx-0">
+
+                <div class="col-12 col-xxl-2 dashboard-nav">
+                    <aside>
+                        <nav class="navbar navbar-expand-xxl">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarText">
+                                    <div class="links-container d-flex flex-column flex-md-row flex-xxl-column mt-4">
+                                        <ul class="d-flex flex-column navbar-nav mx-auto mb-2 mb-lg-0">
+                                            <div class="navbar-title mb-3">Général</div>
+                                            <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                <a class="nav-link" aria-current="location"
+                                                    href="../dashboard/account.html"><i
+                                                        class="bi bi-person-bounding-box mx-3"></i>Mon compte</a>
+                                            </li>
+                                            <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                <a class="nav-link" href="../dashboard/schedules.html"><i
+                                                        class="bi bi-clock mx-3"></i>Mes horaires</a>
+                                            </li>
+                                            <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                <a class="nav-link active" href="../dashboard/add_ announcement.html"><i
+                                                        class="bi bi-megaphone mx-3"></i>Mes annonces</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="d-flex flex-column navbar-nav me-auto mt-xxl-5 mb-2 mb-lg-0">
+                                            <div class="navbar-title mb-3">Prestations</div>
+                                            <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                <a class="nav-link" href="../dashboard/list_services.html"><i
+                                                        class="bi bi-list-ul mx-3"></i>Liste des prestations</a>
+                                            </li>
+                                            <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                <a class="nav-link" href="../dashboard/discount.html"><i
+                                                        class="bi bi-tags mx-3"></i>Promotions</a>
+                                            </li>
+                                            <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                <a class="nav-link" href="../dashboard/add_category.html"><i
+                                                        class="bi bi-plus-circle mx-3"></i>Ajouter une catégorie</a>
+                                            </li>
+                                            <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                <a class="nav-link" href="../dashboard/add_services.html"><i
+                                                        class="bi bi-plus-circle mx-3"></i>Ajouter une prestation</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </aside>
+                </div>
+
+                <div class="col-12 col-xl-9 col-xxl-10">
+                    <section class="d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="category-title text-center py-4 my-5 px-3 px-md-5">Mes annonces</h1>
+
+                        <!-- ============================================================================================================= -->
+                        <!-- TABLEAU DES ANNONCES PASSÉES -->
+                        <!-- ============================================================================================================= -->
+                        <div class="table-responsive pt-md-5 my-4 my-md-5">
+                            <table class="table align-middle table-hover-brown">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">
+                                            <h2>Anciennes annonces</h2>
+                                        </th>
+                                        <th scope="col"></th>
+                                        <th scope="col">
+                                            <div class="d-flex justify-content-end">
+                                                <!-- Bouton supprimer -->
+                                                <a href="" class="btn delete deleteAll py-2"
+                                                    title="Supprimer toutes les annonces" data-id="" data-param="4"
+                                                    data-method="1" data-bs-toggle="modal"
+                                                    data-bs-target="#displayModal" id="deleteAll">
+                                                    <i class="bi bi-trash3" data-id="" data-param="4"
+                                                        data-method="1"></i>
+                                                </a>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>
+                                            Toutes les prestations gratuites !
+                                        </td>
+                                        <td>
+                                            <div
+                                                class="table-badge-beige d-flex justify-content-center align-items-center text-center fw-bold text-nowrap w-100 px-3 py-2">
+                                                Du 10/02/2020 au 20/02/2020</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end">
+                                                <!-- Bouton supprimer -->
+                                                <button type="button" class="btn delete delete-one py-2"
+                                                    title="Supprimer l'annonce" data-id="1" data-param="4"
+                                                    data-method="2" data-bs-toggle="modal"
+                                                    data-bs-target="#displayModal">
+                                                    <i class="bi bi-trash3" data-id="1" data-param="4"
+                                                        data-method="2"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>
+                                            Le salon sera exceptionnellement fermé du <span>25/07</span> au
+                                            <span>30/07</span>
+                                        </td>
+                                        <td>
+                                            <div
+                                                class="table-badge-beige d-flex justify-content-center align-items-center text-center fw-bold text-nowrap w-100 px-3 py-2">
+                                                Du 25/07/2022 au 30/07/2022</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end">
+                                                <!-- Bouton supprimer -->
+                                                <button type="button" class="btn delete delete-one py-2"
+                                                    title="Supprimer l'annonce" data-id="2" data-param="4"
+                                                    data-method="2" data-bs-toggle="modal"
+                                                    data-bs-target="#displayModal">
+                                                    <i class="bi bi-trash3" data-id="2" data-param="4"
+                                                        data-method="2"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- ============================================================================================================= -->
+
+
+
+                        <!-- ============================================================================================================= -->
+                        <!-- FORMULAIRE -->
+                        <!-- ============================================================================================================= -->
+                        <form method="POST" class="d-flex flex-column align-items-center w-100" id="announcement-form">
+
+                            <!-- -------------------------------------------------------------- -->
+                            <!-- MODIFICATION OU DÉSACTIVATION DE L'ANNONCE -->
+                            <div class="dashboard-form d-flex flex-column align-items-center">
+                                <label class="fw-bold mt-4 mt-md-5 mb-4 mb-md-0">Une annonce est actuellement en cours
+                                    :</label>
+
+                                <div class="btn-group d-flex flex-column flex-md-row w-100 mb-4 mb-lg-5 py-md-5"
+                                    role="group" aria-label="Activer / Désactiver l'annonce">
+                                    <input type="radio" class="btn-check status-choice" name="active" value="1"
+                                        id="modify" autocomplete="off" required checked>
+                                    <label class="btn btn-radio" for="modify">Modifier</label>
+
+                                    <input type="radio" class="btn-check status-choice" name="active" value="0"
+                                        id="deactivation" autocomplete="off" data-bs-toggle="modal"
+                                        data-bs-target="#displayModal" data-id="3" data-param="4">
+                                    <label class="btn btn-radio" for="deactivation">Désactiver</label>
+                                </div>
+                            </div>
+                            <!-- -------------------------------------------------------------- -->
+
+                            <!-- -------------------------------------------------------------- -->
+                            <!-- APERÇU DE L'ANNONCE -->
+                            <div class="announcement">
+                                <div class="row mx-0 announcement-content">
+                                    <div class="col d-flex justify-content-center">
+                                        <div
+                                            class="d-flex flex-wrap justify-content-center align-items-center py-2 pe-3">
+                                            <i class="bi bi-megaphone-fill announcement-icon"></i>
+                                            <p class="d-flex flex-wrap justify-content-center align-items-center text-center pt-2 pt-md-0 ps-md-5 my-0"
+                                                id="preview">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- -------------------------------------------------------------- -->
+
+                            <div class="dashboard-form d-flex flex-column align-items-center">
+
+                                <!-- -------------------------------------------------------------- -->
+                                <!-- CONTENU DE L'ANNONCE -->
+                                <div class="mb-4 mb-md-5 pt-4 pt-md-5 w-100">
+                                    <p class="text-center text-green fst-italic mb-5">Afin de limiter les erreurs
+                                        d'orthographe, vous pouvez faire vérifier votre texte sur le site de <a
+                                            href="https://bonpatron.com/fr/" class="text-pink underline" target="_blank"
+                                            rel="noopener noreferrer">Bonpatron</a>.</p>
+                                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                                        <label for="content" class="form-label me-3">Contenu * :</label>
+                                        <small>Nb de caractères restants : <span id="counterChar">500</span></small>
+                                    </div>
+                                    <textarea class="form-control textarea" name="content" maxlength="500" id="content"
+                                        required><span>-15%</span> sur les modelages du <span>18/07</span> au <span>28/08</span></textarea>
+
+                                    <small class="d-none d-block text-danger fst-italic mt-2" role="alert"
+                                        aria-errormessage="content" id="contentError"></small>
+                                    <small class="d-none d-block text-danger fst-italic mt-2" role="alert"
+                                        aria-errormessage="content" id="contentLenght"></small>
+                                    <button type="button" class="formatting mt-3 mx-2">Mettre en valeur</button>
+                                </div>
+                                <!-- -------------------------------------------------------------- -->
+
+
+                                <!-- -------------------------------------------------------------- -->
+                                <!-- DATES DE L'ANNONCE -->
+                                <label class="text-center fw-bold mb-4">Quand l'annonce doit-elle apparaître sur le site
+                                    ?</label>
+
+                                <div class="d-flex flex-column flex-md-row justify-content-around w-100 mb-4 mb-md-5">
+                                    <div class="form-div me-md-5 mb-3 mb-md-0">
+                                        <label for="startDate" class="form-label me-3">Date de début * :</label>
+                                        <input type="date" class="form-control" id="startDate" name="startDate" min=""
+                                            value="" pattern="^\d{4}-\d{2}-\d{2}$" required>
+                                        <small class="d-none text-danger fst-italic mt-2" role="alert"
+                                            aria-errormessage="startDate" id="startDateError"></small>
+                                    </div>
+
+                                    <span class="align-self-center fw-bold">au</span>
+
+                                    <div class="form-div ms-md-5 mt-3 mt-md-0">
+                                        <label for="endDate" class="form-label me-3">Date de fin * :</label>
+                                        <input type="date" class="form-control" id="endDate" name="endDate" min=""
+                                            value="2023-08-28" pattern="^\d{4}-\d{2}-\d{2}$" required>
+                                        <small class="d-none text-danger fst-italic mt-2" role="alert"
+                                            aria-errormessage="endDate" id="endDateError"></small>
+                                    </div>
+                                </div>
+                                <!-- -------------------------------------------------------------- -->
+
+                                <!-- -------------------------------------------------------------- -->
+                                <!-- BOUTON DE VALIDATION -->
+                                <div class="d-flex justify-content-center pb-md-5 mt-4 mt-md-5 mb-5 w-100">
+                                    <button type="submit" class="btn btn-classic py-2"><i class="bi bi-pencil-fill me-3"
+                                            aria-hidden="true"></i>Modifier l'annonce</button>
+                                </div>
+                                <!-- -------------------------------------------------------------- -->
+                            </div>
+                        </form>
+                        <!-- ============================================================================================================= -->
+
+                    </section>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="displayModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-4">
+                    <p class="text-center"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline me-md-4 mb-3 mb-md-0"
+                        data-bs-dismiss="modal">Non</button>
+                    <a class="btn btn-classic py-2" id="controllerLink">Oui</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================================================================================================================== -->
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-around mt-4 mb-4 mb-lg-0 mb-xxl-4 mx-0">
+                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 order-1 d-flex justify-content-md-center mb-4 mb-md-5 mb-lg-4"
+                    id="informations">
+                    <ul class="ms-3 ms-md-0">
+                        <li class="fs-4 footerTitle mb-4">Informations</li>
+                        <li class="my-2"><a href="./informations/legal_notice.html" class="footer-link">Mentions
+                                légales</a></li>
+                        <li class="my-2"><a href="./construction.html" class="footer-link">Politiques de
+                                confidentialité</a></li>
+                        <li class="my-2"><a href="./construction.html" class="footer-link">Conditions générales de
+                                vente</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 order-3 order-lg-2 d-flex justify-content-md-center mb-4"
+                    id="contact">
+                    <ul class="ms-3 ms-md-0">
+                        <li class="fs-4 footerTitle mb-4">Contact</li>
+                        <li class="my-3"><i class="bi bi-geo-alt me-2"></i> 10 chemin de la Tombelle <br> 02100 Saint
+                            Quentin</li>
+                        <li class="my-3"><a href="mailto: esthetique@gmail.com"><i
+                                    class="bi bi-envelope-at me-2"></i>esthetique@gmail.com</a></li>
+                        <li class="my-3"><i class="bi bi-telephone me-2"></i>07.67.47.68.37</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 order-2 order-lg-3 d-flex justify-content-md-center mb-4 mb-md-5 mb-lg-4"
+                    id="websiteNavigation">
+                    <ul class="ms-3 ms-md-0">
+                        <li class="fs-4 footerTitle mb-4">L' Aura Natur'elle</li>
+                        <li class="my-2"><a href="./index.html" class="footer-link">Accueil</a></li>
+                        <li class="my-2"><a href="./main/services_categories.html" class="footer-link">Prestations</a>
+                        </li>
+                        <li class="my-2"><a href="./main/appointment.html" class="footer-link">Prendre RDV</a></li>
+                        <li class="my-2"><a href="./construction.html" class="footer-link">Carte cadeaux</a></li>
+                        <li class="my-2"><a href="./main/contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 order-4 d-flex justify-content-md-center mb-4"
+                    id="schedule">
+                    <ul class="ms-3 ms-md-0">
+                        <li class="fs-4 footerTitle mb-4">Horaires</li>
+                        <li class="my-2"><span>Lundi :</span> Fermé</li>
+                        <li class="my-2"><span>Mardi :</span> 10h-18h</li>
+                        <li class="my-2"><span>Mercredi :</span> Fermé</li>
+                        <li class="my-2"><span>Jeudi :</span> 10h-18h</li>
+                        <li class="my-2"><span>Vendredi :</span> 10h-18h</li>
+                        <li class="my-2"><span>Samedi :</span> 10h-18h</li>
+                        <li class="my-2"><span>Dimanche :</span> Fermé</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xxl-2 order-5 d-flex justify-content-center align-items-center"
+                    id="socialNetwork">
+                    <ul class="d-flex flex-xxl-column">
+                        <li class="me-5 me-xxl-0 mb-xxl-5"><a href="https://www.facebook.com/lauranaturellebioetvegan02"
+                                target="_blank" rel="noopener noreferrer" title="Facebook"
+                                aria-label="Ouvrir la page facebook de L'Aura Natur'elle"><i class="bi bi-facebook"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a href="" target="_blank" rel="noopener noreferrer" title="Instagram"
+                                aria-label="Ouvrir la page instagram de L'Aura Natur'elle"><i class="bi bi-instagram"
+                                    aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mx-0">
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                    <hr>
+                    <small class="text-center mb-4">© L'Aura Natur'elle 2019 - 2023 - Tous droits réservés</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../public/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/assets/js/script.js"></script>
+
+    <script type="module" src="../public/assets/js/form.js"></script>
+    <script type="module" src="../public/assets/js/modal.link.js"></script>
+    <script type="module" src="../public/assets/js/announcement.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K01XHPHL6L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-K01XHPHL6L');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Petrona:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/assets/bootstrap-icons-1.10.3/bootstrap-icons.css">
+    <link rel="stylesheet" href="../public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/assets/css/main.css">
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" href="">
+    <title>L'Aura Natur'elle - Liste des prestations</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-dark mainNav navbar-expand-xl">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="../index.html"><img
+                        src="../public/assets/img/logos/logo.webp" alt="Logo" class="d-inline-block me-3">L'Aura
+                    Natur'elle</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end offcanvasColor" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand offcanvas-title d-flex align-items-center" href="../index.html"
+                            id="offcanvasDarkNavbarLabel"><img src="../public/assets/img/logos/logo.webp" alt="Logo"
+                                class="d-inline-block me-3">L'Aura Natur'elle</a>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav my-auto">
+                            <li class="nav-item drop-menu mx-1 mx-xl-3 mx-xxl-4 my-2 my-xl-0">
+                                <a class="nav-link header-link" href="../main/services_categories.html">
+                                    Prestations
+                                </a>
+                                <ul class="drop-links d-none">
+                                    <li><a href="../main/services_lines.html" class="ps-3">Epilations</a></li>
+                                    <li><a href="../main/services_lines.html" class="ps-3">Soins du visage</a></li>
+                                    <li><a href="../main/services_lines.html" class="ps-3">Soins du corps</a></li>
+                                    <li><a href="../main/services.html" class="ps-3">Soins des mains</a></li>
+                                    <li><a href="../main/services.html" class="ps-3">Soins des pieds</a></li>
+                                    <li><a href="../main/services.html" class="ps-3">Modelage (Massage)</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-1 mx-xl-3 mx-xxl-4 my-2 my-xl-0">
+                                <a class="nav-link header-link" href="../main/gift_card.html">Carte cadeaux</a>
+                            </li>
+                            <li class="nav-item mx-1 mx-xl-3 mx-xxl-4 my-2 my-xl-0">
+                                <a class="nav-link header-link" href="../main/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item mx-1 mx-xxl-3 my-2 my-xl-0">
+                                <a class="nav-link dashboardLink active px-4" href="../dashboard/account.html"
+                                    aria-current="page">Gestion</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========================================================================================================================================================================== -->
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <main>
+        <div class="container-fluid px-0">
+
+            <div class="row justify-content-around mx-0">
+
+                <div class="col-12 col-xxl-2 dashboard-nav">
+                    <aside>
+                        <nav class="navbar navbar-expand-xxl">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarText">
+                                    <div class="links-container d-flex flex-column flex-md-row flex-xxl-column mt-4">
+                                        <ul class="d-flex flex-column navbar-nav mx-auto mb-2 mb-lg-0">
+                                            <div class="navbar-title mb-3">Général</div>
+                                            <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                <a class="nav-link" aria-current="location"
+                                                    href="../dashboard/account.html"><i
+                                                        class="bi bi-person-bounding-box mx-3"></i>Mon compte</a>
+                                            </li>
+                                            <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                <a class="nav-link" href="../dashboard/schedules.html"><i
+                                                        class="bi bi-clock mx-3"></i>Mes horaires</a>
+                                            </li>
+                                            <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                <a class="nav-link" href="../dashboard/add_ announcement.html"><i
+                                                        class="bi bi-megaphone mx-3"></i>Mes annonces</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="d-flex flex-column navbar-nav me-auto mt-xxl-5 mb-2 mb-lg-0">
+                                            <div class="navbar-title mb-3">Prestations</div>
+                                            <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                <a class="nav-link active" href="../dashboard/list_services.html"><i
+                                                        class="bi bi-list-ul mx-3"></i>Liste des prestations</a>
+                                            </li>
+                                            <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                <a class="nav-link" href="../dashboard/discount.html"><i
+                                                        class="bi bi-tags mx-3"></i>Promotions</a>
+                                            </li>
+                                            <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                <a class="nav-link" href="../dashboard/add_category.html"><i
+                                                        class="bi bi-plus-circle mx-3"></i>Ajouter une catégorie</a>
+                                            </li>
+                                            <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                <a class="nav-link" href="../dashboard/add_services.html"><i
+                                                        class="bi bi-plus-circle mx-3"></i>Ajouter une prestation</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </aside>
+                </div>
+
+                <div class="col-12 col-xl-9 col-xxl-10">
+                    <section class="d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="category-title text-center py-4 my-5 px-3 px-md-5">Liste des prestations</h1>
+
+                        <div class="table-responsive pt-md-5 my-4 my-md-5">
+                            <table class="table align-middle table-hover-green">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col" class="table-description">
+                                            <h2>Modelages</h2>
+                                        </th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col">
+                                            <div class="d-flex justify-content-end">
+                                                <a href="" class="btn view py-2 me-3" title="Voir sur le site"><i
+                                                        class="bi bi-globe2"></i></a>
+                                                <!-- Bouton de validation -->
+                                                <a href="" class="btn validate validateAll py-2 me-3" title="Publier la catégorie"
+                                                    data-id="" data-param="1" data-bs-toggle="modal" data-bs-target="#displayModal"><i
+                                                        class="bi bi-check2" data-id="" data-param="1"></i></a>
+                                                <!-- Bouton éditer -->
+                                                <a href="" class="btn edit py-2 me-3" title="Modifier la catégorie"><i
+                                                        class="bi bi-pen" data-param="1"></i></a>
+                                                <!-- Bouton de désactivation -->
+                                                <!-- <a href="" class="btn deactivate deactivateAll py-2 me-3"
+                                                data-id="" data-param="1" data-bs-toggle="modal" data-bs-target="#displayModal"
+                                                    title="Désactiver la catégorie"><i class="bi bi-eye-slash" data-param="1"></i></a> -->
+                                                <!-- Bouton supprimer -->
+                                                <a href="" class="btn delete deleteAll py-2" title="Supprimer la catégorie"
+                                                    data-id="" data-param="1" data-bs-toggle="modal"
+                                                    data-bs-target="#displayModal">
+                                                    <i class="bi bi-trash3" data-id="" data-param="1"></i>
+                                                </a>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <th class="shelved" scope="row">1</th>
+                                        <td>
+                                            <i class="bi bi-stars text-gold me-3" title="Nouveauté"></i><i class="bi bi-gender-female text-pink me-3" title="Femme"></i>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                Californien
+                                                <!-- <div class="d-inline table-badge-package px-3 ms-3">Forfait</div> -->
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-badge-beige d-flex justify-content-center align-items-center fw-bold px-2 my-2">15 min</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-badge-green d-flex justify-content-center align-items-center px-2 my-2"><span class="text-decoration-line-through me-3">165 €</span> 255,25 €</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end">
+                                                <a href="" class="btn validate py-2 me-3" title="Publier la prestation"
+                                                    data-id="" data-param="2" data-bs-toggle="modal" data-bs-target="#displayModal"><i
+                                                        class="bi bi-check2" data-id="" data-param="2"></i></a>
+                                                <!-- Bouton éditer -->
+                                                <a href="" class="btn edit py-2 me-3" title="Modifier la prestation"><i
+                                                        class="bi bi-pen"></i></a>
+                                                <!-- Bouton de désactivation -->
+                                                <!-- <a href="" class="btn deactivate py-2 me-3"
+                                                    title="Désactiver la prestation" data-id="" data-param="2" data-bs-toggle="modal" data-bs-target="#displayModal"><i class="bi bi-eye" data-id="" data-param="2"></i></a> -->
+                                                <!-- Bouton supprimer -->
+                                                <button type="button" class="btn delete py-2"
+                                                    title="Supprimer la prestation" data-id="" data-param="2"
+                                                    data-bs-toggle="modal" data-bs-target="#displayModal">
+                                                    <i class="bi bi-trash3" data-id="" data-param="2"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>
+                                            <i class="bi bi-gender-female text-pink" title="Femme"></i>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                Thaï Traditionnel
+                                                <!-- <div class="d-inline table-badge-package px-3 ms-3">Forfait</div> -->
+                                                <!-- <div class="d-inline table-badge-new px-3 ms-3">Nouveauté</div> -->
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-badge-beige d-flex justify-content-center align-items-center fw-bold my-2">15 min</div>
+                                            <div class="table-badge-beige d-flex justify-content-center align-items-center fw-bold my-2">15 min</div>
+                                            <div class="table-badge-beige d-flex justify-content-center align-items-center fw-bold my-2">15 min</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-badge-green d-flex justify-content-center align-items-center my-2">15 €</div>
+                                            <div class="table-badge-green d-flex justify-content-center align-items-center my-2">15 €</div>
+                                            <div class="table-badge-green d-flex justify-content-center align-items-center my-2"><span class="text-decoration-line-through me-3">65 €</span> 55,25 €</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end">
+                                                <!-- Bouton éditer -->
+                                                <a href="" class="btn edit py-2 me-3" title="Modifier la prestation"><i
+                                                        class="bi bi-pen"></i></a>
+                                                <!-- Bouton de désactivation -->
+                                                <a href="" class="btn deactivate py-2 me-3"
+                                                    title="Désactiver la prestation"><i class="bi bi-eye"></i></a>
+                                                <!-- Bouton supprimer -->
+                                                <button type="button" class="btn delete py-2"
+                                                    title="Supprimer la prestation" data-id="" data-deleteparam="2"
+                                                    data-bs-toggle="modal" data-bs-target="#displayModal">
+                                                    <i class="bi bi-trash3" data-id="" data-deleteparam="2"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>
+                                            <i class="bi bi-gender-female text-pink me-3" title="Femme"></i> <i class="bi bi-calendar-range text-pink me-3" title="Exclusivité"></i>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                Coquillages chauds 
+                                                <!-- <div class="d-inline table-badge-exclusive px-3 ms-3">Du 15/06 au 25/07</div> -->
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-badge-beige d-flex justify-content-center align-items-center fw-bold my-2">15 min</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-badge-green d-flex justify-content-center align-items-center my-2"><span class="text-decoration-line-through me-3">65 €</span> 55,25 €</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end">
+                                                <!-- Bouton éditer -->
+                                                <a href="" class="btn edit py-2 me-3" title="Modifier la prestation"><i
+                                                        class="bi bi-pen"></i></a>
+                                                <!-- Bouton de désactivation -->
+                                                <a href="" class="btn deactivate py-2 me-3"
+                                                    title="Désactiver la prestation"><i class="bi bi-eye"></i></a>
+                                                <!-- Bouton supprimer -->
+                                                <button type="button" class="btn delete py-2"
+                                                    title="Supprimer la prestation" data-id="" data-deleteparam=""
+                                                    data-bs-toggle="modal" data-bs-target="#displayModal">
+                                                    <i class="bi bi-trash3" data-id="" data-deleteparam=""></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>
+                                            <i class="bi bi-stars text-gold me-3" title="Nouveauté"></i> <i class="bi bi-gender-female text-pink me-3" title="Femme"></i> <i class="bi bi-box text-brown me-3" title="Forfait"></i>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                Évasion Zen 
+                                                <!-- <div class="d-inline table-badge-package px-3 ms-3">Forfait</div> -->
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-badge-beige d-flex justify-content-center align-items-center fw-bold my-2">15 min</div>
+                                            <div class="table-badge-beige d-flex justify-content-center align-items-center fw-bold my-2">15 min</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-badge-green d-flex justify-content-center align-items-center my-2">15 €</div>
+                                            <div class="table-badge-green d-flex justify-content-center align-items-center my-2"><span class="text-decoration-line-through me-3">65 €</span> 55,25 €</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end">
+                                                <!-- Bouton éditer -->
+                                                <a href="" class="btn edit py-2 me-3" title="Modifier la prestation"><i
+                                                        class="bi bi-pen"></i></a>
+                                                <!-- Bouton de désactivation -->
+                                                <a href="" class="btn deactivate py-2 me-3"
+                                                    title="Désactiver la prestation"><i class="bi bi-eye"></i></a>
+                                                <!-- Bouton supprimer -->
+                                                <button type="button" class="btn delete py-2"
+                                                    title="Supprimer la prestation" data-id="" data-deleteparam=""
+                                                    data-bs-toggle="modal" data-bs-target="#displayModal">
+                                                    <i class="bi bi-trash3" data-id="" data-deleteparam=""></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="deactivated" scope="row">5</th>
+                                        <td>
+                                            <i class="bi bi-gender-female text-pink me-3" title="Femme"></i> <i class="bi bi-box text-brown me-3" title="Forfait"></i> <i class="bi bi-calendar-range text-pink me-3" title="Exclusivité"></i>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                Hawaïen Lomi-Lomi
+                                                <!-- <div class="d-inline table-badge-package px-3 ms-3">Forfait</div> -->
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-badge-beige d-flex justify-content-center align-items-center fw-bold my-2">15 min</div>
+                                            <div class="table-badge-beige d-flex justify-content-center align-items-center fw-bold my-2">15 min</div>
+                                            <div class="table-badge-beige d-flex justify-content-center align-items-center fw-bold my-2">15 min</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-badge-green d-flex justify-content-center align-items-center my-2">15 €</div>
+                                            <div class="table-badge-green d-flex justify-content-center align-items-center my-2">15 €</div>
+                                            <div class="table-badge-green d-flex justify-content-center align-items-center my-2"><span class="text-decoration-line-through me-3">65 €</span> 55,25 €</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end">
+                                                <!-- Bouton éditer -->
+                                                <a href="" class="btn edit py-2 me-3" title="Modifier la prestation"><i
+                                                        class="bi bi-pen"></i></a>
+                                                <!-- Bouton de désactivation -->
+                                                <a href="" class="btn deactivate py-2 me-3"
+                                                    title="Activer la prestation"><i class="bi bi-eye-slash"></i></a>
+                                                <!-- Bouton supprimer -->
+                                                <button type="button" class="btn delete py-2"
+                                                    title="Supprimer la prestation" data-id="" data-deleteparam=""
+                                                    data-bs-toggle="modal" data-bs-target="#displayModal">
+                                                    <i class="bi bi-trash3" data-id="" data-deleteparam=""></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="deactivated" scope="row">6</th>
+                                        <td>
+                                            <i class="bi bi-gender-male text-green me-3" title="Homme"></i> <i class="bi bi-box text-brown me-3" title="Forfait"></i>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                Harmonie Totale 
+                                                <!-- <dir>
+                                                    <div class="table-badge-package px-3 ms-3 my-1">Forfait</div>
+                                                    <div class="table-badge-exclusive px-3 ms-3 my-1">Du 15/06 au 25/07</div>
+                                                </dir> -->
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-badge-beige d-flex justify-content-center align-items-center fw-bold my-2">15 min</div>
+                                            <div class="table-badge-beige d-flex justify-content-center align-items-center fw-bold my-2">15 min</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-badge-green d-flex justify-content-center align-items-center my-2">15 €</div>
+                                            <div class="table-badge-green d-flex justify-content-center align-items-center my-2"><span class="text-decoration-line-through me-3">65 €</span> 55,25 €</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end">
+                                                <!-- Bouton éditer -->
+                                                <a href="" class="btn edit py-2 me-3" title="Modifier la prestation"><i
+                                                        class="bi bi-pen"></i></a>
+                                                <!-- Bouton de désactivation -->
+                                                <a href="" class="btn deactivate py-2 me-3"
+                                                    title="Activer la prestation"><i class="bi bi-eye-slash"></i></a>
+                                                <!-- Bouton supprimer -->
+                                                <button type="button" class="btn delete py-2"
+                                                    title="Supprimer la prestation" data-id="" data-deleteparam=""
+                                                    data-bs-toggle="modal" data-bs-target="#displayModal">
+                                                    <i class="bi bi-trash3" data-id="" data-deleteparam=""></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="table-responsive pt-md-5 my-4 my-md-5">
+                            <table class="table align-middle table-hover-green">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">
+                                            <h2>Épilations</h2>
+                                        </th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col">
+                                            <div class="d-flex justify-content-end">
+                                                <!-- <a href="" class="btn view py-2 me-3" title="Voir sur le site"><i
+                                                        class="bi bi-globe2"></i></a> -->
+                                                        <!-- Bouton de validation -->
+                                                <a href="" class="btn validate py-2 me-3" title="Publier la catégorie"
+                                                data-id="" data-bs-toggle="modal" data-bs-target="#displayModal"><i
+                                                    class="bi bi-check2" data-id=""></i></a>
+                                                <!-- Bouton éditer -->
+                                                <a href="" class="btn edit py-2 me-3" title="Modifier la catégorie"><i
+                                                        class="bi bi-pen"></i></a>
+                                                <!-- Bouton de désactivation -->
+                                                <!-- <a href="" class="btn deactivate py-2 me-3"
+                                                    title="Désactiver la catégorie"><i class="bi bi-eye-slash"></i></a> -->
+                                                <!-- Bouton supprimer -->
+                                                <a href="" class="btn delete py-2" title="Supprimer la catégorie"
+                                                    data-id="" data-deleteparam="" data-bs-toggle="modal"
+                                                    data-bs-target="#displayModal">
+                                                    <i class="bi bi-trash3" data-id="" data-deleteparam=""></i>
+                                                </a>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="table-group-divider">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </section>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="displayModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-4">
+                    <p class="text-center"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline me-md-4 mb-3 mb-md-0"
+                        data-bs-dismiss="modal">Non</button>
+                    <a class="btn btn-classic py-2" id="controllerLink">Oui</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================================================================================================================== -->
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-around mt-4 mb-4 mb-lg-0 mb-xxl-4 mx-0">
+                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 order-1 d-flex justify-content-md-center mb-4 mb-md-5 mb-lg-4"
+                    id="informations">
+                    <ul class="ms-3 ms-md-0">
+                        <li class="fs-4 footerTitle mb-4">Informations</li>
+                        <li class="my-2"><a href="./informations/legal_notice.html" class="footer-link">Mentions
+                                légales</a></li>
+                        <li class="my-2"><a href="./construction.html" class="footer-link">Politiques de
+                                confidentialité</a></li>
+                        <li class="my-2"><a href="./construction.html" class="footer-link">Conditions générales de
+                                vente</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 order-3 order-lg-2 d-flex justify-content-md-center mb-4"
+                    id="contact">
+                    <ul class="ms-3 ms-md-0">
+                        <li class="fs-4 footerTitle mb-4">Contact</li>
+                        <li class="my-3"><i class="bi bi-geo-alt me-2"></i> 10 chemin de la Tombelle <br> 02100 Saint
+                            Quentin</li>
+                        <li class="my-3"><a href="mailto: esthetique@gmail.com"><i
+                                    class="bi bi-envelope-at me-2"></i>esthetique@gmail.com</a></li>
+                        <li class="my-3"><i class="bi bi-telephone me-2"></i>07.67.47.68.37</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 order-2 order-lg-3 d-flex justify-content-md-center mb-4 mb-md-5 mb-lg-4"
+                    id="websiteNavigation">
+                    <ul class="ms-3 ms-md-0">
+                        <li class="fs-4 footerTitle mb-4">L' Aura Natur'elle</li>
+                        <li class="my-2"><a href="./index.html" class="footer-link">Accueil</a></li>
+                        <li class="my-2"><a href="./main/services_categories.html" class="footer-link">Prestations</a>
+                        </li>
+                        <li class="my-2"><a href="./main/appointment.html" class="footer-link">Prendre RDV</a></li>
+                        <li class="my-2"><a href="./construction.html" class="footer-link">Carte cadeaux</a></li>
+                        <li class="my-2"><a href="./main/contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 order-4 d-flex justify-content-md-center mb-4"
+                    id="schedule">
+                    <ul class="ms-3 ms-md-0">
+                        <li class="fs-4 footerTitle mb-4">Horaires</li>
+                        <li class="my-2"><span>Lundi :</span> Fermé</li>
+                        <li class="my-2"><span>Mardi :</span> 10h-18h</li>
+                        <li class="my-2"><span>Mercredi :</span> Fermé</li>
+                        <li class="my-2"><span>Jeudi :</span> 10h-18h</li>
+                        <li class="my-2"><span>Vendredi :</span> 10h-18h</li>
+                        <li class="my-2"><span>Samedi :</span> 10h-18h</li>
+                        <li class="my-2"><span>Dimanche :</span> Fermé</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xxl-2 order-5 d-flex justify-content-center align-items-center"
+                    id="socialNetwork">
+                    <ul class="d-flex flex-xxl-column">
+                        <li class="me-5 me-xxl-0 mb-xxl-5"><a href="https://www.facebook.com/lauranaturellebioetvegan02"
+                                target="_blank" rel="noopener noreferrer" title="Facebook"
+                                aria-label="Ouvrir la page facebook de L'Aura Natur'elle"><i class="bi bi-facebook"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a href="" target="_blank" rel="noopener noreferrer" title="Instagram"
+                                aria-label="Ouvrir la page instagram de L'Aura Natur'elle"><i class="bi bi-instagram"
+                                    aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mx-0">
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                    <hr>
+                    <small class="text-center mb-4">© L'Aura Natur'elle 2019 - 2023 - Tous droits réservés</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../public/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/assets/js/script.js"></script>
+
+    <script type="module" src="../public/assets/js/modal.link.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K01XHPHL6L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-K01XHPHL6L');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Petrona:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/assets/bootstrap-icons-1.10.3/bootstrap-icons.css">
+    <link rel="stylesheet" href="../public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/assets/css/main.css">
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" href="">
+    <title>L'Aura Natur'elle - Ajouter une prestation</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-dark mainNav navbar-expand-xl">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="../index.html"><img src="../public/assets/img/logos/logo.webp"
+                        alt="Logo" class="d-inline-block me-3">L'Aura Natur'elle</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end offcanvasColor" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand offcanvas-title d-flex align-items-center" href="../index.html" id="offcanvasDarkNavbarLabel"><img src="../public/assets/img/logos/logo.webp"
+                            alt="Logo" class="d-inline-block me-3">L'Aura Natur'elle</a>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav my-auto">
+                            <li class="nav-item drop-menu mx-1 mx-xl-3 mx-xxl-4 my-2 my-xl-0">
+                                <a class="nav-link header-link" href="../main/services_categories.html">
+                                    Prestations
+                                </a>
+                                <ul class="drop-links d-none">
+                                    <li><a href="../main/services_lines.html" class="ps-3">Epilations</a></li>
+                                    <li><a href="../main/services_lines.html" class="ps-3">Soins du visage</a></li>
+                                    <li><a href="../main/services_lines.html" class="ps-3">Soins du corps</a></li>
+                                    <li><a href="../main/services.html" class="ps-3">Soins des mains</a></li>
+                                    <li><a href="../main/services.html" class="ps-3">Soins des pieds</a></li>
+                                    <li><a href="../main/services.html" class="ps-3">Modelage (Massage)</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-1 mx-xl-3 mx-xxl-4 my-2 my-xl-0">
+                                <a class="nav-link header-link" href="../main/gift_card.html">Carte cadeaux</a>
+                            </li>
+                            <li class="nav-item mx-1 mx-xl-3 mx-xxl-4 my-2 my-xl-0">
+                                <a class="nav-link header-link" href="../main/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item mx-1 mx-xxl-3 my-2 my-xl-0">
+                                <a class="nav-link dashboardLink active px-4" href="../dashboard/account.html" aria-current="page">Gestion</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========================================================================================================================================================================== -->
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <main>
+        <div class="container-fluid px-0">
+
+                <div class="row justify-content-around mx-0">
+
+                    <div class="col-12 col-xxl-2 dashboard-nav">
+                        <aside>
+                            <nav class="navbar navbar-expand-xxl">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarText">
+                                        <div class="links-container d-flex flex-column flex-md-row flex-xxl-column mt-4">
+                                            <ul class="d-flex flex-column navbar-nav mx-auto mb-2 mb-lg-0">
+                                                <div class="navbar-title mb-3">Général</div>
+                                                <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                    <a class="nav-link" aria-current="location" href="../dashboard/account.html"><i class="bi bi-person-bounding-box mx-3"></i>Mon compte</a>
+                                                </li>
+                                                <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                    <a class="nav-link" href="../dashboard/schedules.html"><i class="bi bi-clock mx-3"></i>Mes horaires</a>
+                                                </li>
+                                                <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                    <a class="nav-link" href="../dashboard/add_ announcement.html"><i class="bi bi-megaphone mx-3"></i>Mes annonces</a>
+                                                </li>
+                                            </ul>
+    
+                                            <ul class="d-flex flex-column navbar-nav me-auto mt-xxl-5 mb-2 mb-lg-0">
+                                                <div class="navbar-title mb-3">Prestations</div>
+                                                <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                    <a class="nav-link" href="../dashboard/list_services.html"><i class="bi bi-list-ul mx-3"></i>Liste des prestations</a>
+                                                </li>
+                                                <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                    <a class="nav-link" href="../dashboard/discount.html"><i class="bi bi-tags mx-3"></i>Promotions</a>
+                                                </li>
+                                                <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                    <a class="nav-link" href="../dashboard/add_category.html"><i class="bi bi-plus-circle mx-3"></i>Ajouter une catégorie</a>
+                                                </li>
+                                                <li class="nav-item py-2 px-md-4 px-xl-0">
+                                                    <a class="nav-link active" href="../dashboard/add_services.html"><i class="bi bi-plus-circle mx-3"></i>Ajouter une prestation</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </aside>
+                    </div>
+
+                    <div class="col-12 col-xl-9 col-xxl-10">
+                        <section class="d-flex flex-column justify-content-center align-items-center">
+                            <h1 class="category-title text-center py-4 my-5 px-3 px-md-5">Ajouter une prestation</h1>
+
+                            <!-- ========================================================================================================================================================================== -->
+                            <!-- FORMULAIRE -->
+                            <!-- ========================================================================================================================================================================== -->
+
+
+                            <form method="post" class="dashboard-form mt-5" id="service-form">
+
+                                <!-- =============================================================================================================== -->
+                                <!-- INFORMATION GÉNÉRALE -->
+                                <!-- =============================================================================================================== -->
+
+                                <fieldset>
+                                    <legend class="text-center py-2 mb-4 mb-md-5">Informations générales</legend>
+                                    <!-- -------------------------------------------------------------- -->
+                                    <!-- CATÉGORIE DE LA PRESTATION -->
+                                    <div class="mb-4">
+                                        <label for="category" class="form-label mb-2">Catégorie de la prestation * :</label>
+                                        <select class="form-select" id="category" name="category" required>
+                                            <option value="0">-</option>
+                                            <option value="1">Épilations</option>
+                                            <option value="2">Soins du visage</option>
+                                            <option value="3">Soins des mains</option>
+                                            <option value="4">Modelages</option>
+                                        </select>
+                                        <small class="d-none text-danger fst-italic mt-2" role="alert" aria-errormessage="category" id="categoryError"></small>
+                                    </div>
+                                    <!-- -------------------------------------------------------------- -->
+
+                                    <!-- -------------------------------------------------------------- -->
+                                    <!-- NOM DE LA PRESTATION -->
+                                    <div class="mb-4">
+                                        <label for="title" class="form-label me-3">Nom * :</label>
+                                        <input type="text" class="form-control" id="title" name="title" value="" maxlength="50" required>
+                                        <small class="d-none text-danger fst-italic mt-2" role="alert" aria-errormessage="title" id="titleError"></small>
+                                    </div>
+                                    <!-- -------------------------------------------------------------- -->
+
+                                    <!-- -------------------------------------------------------------- -->
+                                    <!-- DESCRIPTION DE LA PRESTATION -->
+                                    <div class="mb-4 pt-md-5">
+                                        <p class="text-center text-green fst-italic mb-5">Afin de limiter les erreurs d'orthographe, vous pouvez faire vérifier votre texte sur le site de <a href="https://bonpatron.com/fr/" class="text-pink underline" target="_blank" rel="noopener noreferrer">Bonpatron</a>.</p>
+                                        <div class="d-flex flex-column flex-md-row justify-content-between">
+                                            <label for="description" class="form-label me-3">Description :</label>
+                                            <small>Nb de caractères restants : <span id="counterChar">250</span></small>
+                                        </div>
+                                        <textarea class="form-control textarea" name="description" id="description" maxlength="250"></textarea>
+                                        <small class="text-danger fst-italic mt-2" role="alert" aria-errormessage="description" id="descriptionLenght"></small>
+                                    </div>
+                                    <!-- -------------------------------------------------------------- -->
+                                </fieldset>
+
+                                <!-- ================================================================================================================ -->
+                                <!-- TARIFICATION -->
+                                <!-- ================================================================================================================ -->
+
+                                <fieldset>
+                                    <legend class="text-center py-2 mt-4 mb-4 mb-lg-5">Tarification</legend>
+                                    <!-- -------------------------------------------------------------- -->
+                                    <!-- DURÉE ET TARIF -->
+                                    <div id="pricings">
+                                        <div class="d-flex flex-column flex-md-row justify-content-between pricing py-3" id="pricing1">
+                                            <div class="mb-4">
+                                                <label for="duration1" class="form-label me-3">Durée (en minutes) * :</label>
+                                                <input type="number" class="form-control" id="duration1" name="duration1" value="" required>
+                                                <small class="d-none text-danger fst-italic mt-2" role="alert" aria-errormessage="duration1" id="durationError1"></small>
+                                            </div>
+        
+                                            <div class="mb-md-4">
+                                                <label for="price1" class="form-label me-3">Tarif * :</label>
+                                                <input type="number" class="form-control" id="price1" name="price1" value="" required>
+                                                <small class="d-none text-danger fst-italic mt-2" role="alert" aria-errormessage="price1" id="priceError1"></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- -------------------------------------------------------------- -->
+
+                                    <!-- -------------------------------------------------------------- -->
+                                    <!-- BOUTON D'AJOUT D'UNE TARIFICATION SUPPLÉMENTAIRE ET DE SUPPRESSION -->
+                                    <div class="d-flex flex-column align-items-center mb-5 mt-4">
+                                        <small class="d-none text-danger text-center fst-italic mb-2" role="alert" id="addError">Vous ne pouvez pas ajouter de tarification supplémentaire.</small>
+                                        <div>
+                                            <button type="button" class="btn btn-classic" id="addPricing" aria-errormessage="addError" title="Ajouter une tarification"><i class="bi bi-plus-circle me-3" aria-hidden="true"></i>Ajouter</button>
+                                            <button type="button" class="d-none btn btn-classic mt-4 mt-md-0 ms-lg-4" id="deletePricing" title="Supprimer une tarification"><i class="bi bi-trash3 me-3" aria-hidden="true"></i>Supprimer</button>
+                                        </div>
+                                    </div>
+                                    <!-- -------------------------------------------------------------- -->
+                                </fieldset>
+
+                                <!-- ================================================================================================================= -->
+                                <!-- TYPE DE PRESTATION -->
+                                <!-- ================================================================================================================= -->
+                            
+                                <fieldset>
+                                    <legend class="text-center py-2 mb-4 mb-md-5">Type de la prestation</legend>
+                                    
+                                    <div>
+                                        <!-- -------------------------------------------------------------- -->
+                                        <!-- PRESTATION CLASSIQUE OU FORFAIT -->
+                                        <small class="d-none d-block text-danger text-center fst-italic mt-2" role="alert" id="genderError"></small>
+                                        <div class="btn-group d-flex mt-3 mb-5" role="group" aria-label="Choisir le type de prestation">
+
+                                            <input type="radio" class="btn-check" name="gender" value="1" id="male" aria-errormessage="genderError" autocomplete="off" required>
+                                            <label class="btn btn-radio" for="male">Prestation Homme</label>
+
+                                            <input type="radio" class="btn-check" name="gender" value="2" id="female" aria-errormessage="genderError" autocomplete="off">
+                                            <label class="btn btn-radio" for="female">Prestation Femme</label>
+                                        </div>
+                                        <!-- -------------------------------------------------------------- -->
+
+                                        <!-- -------------------------------------------------------------- -->
+                                        <!-- PRESTATION CLASSIQUE OU FORFAIT -->
+                                        <small class="d-none d-block text-danger text-center fst-italic mt-2" role="alert" id="packageError"></small>
+                                        <div class="btn-group d-flex mt-3 mb-5" role="group" aria-label="Choisir le type de prestation">
+                                            
+                                            <input type="radio" class="btn-check" name="package" value="0" id="classic" aria-errormessage="packageError" autocomplete="off" required>
+                                            <label class="btn btn-radio" for="classic">Prestation classique</label>
+                                        
+                                            <input type="radio" class="btn-check" name="package" value="1" id="package" aria-errormessage="packageError" autocomplete="off">
+                                            <label class="btn btn-radio" for="package">Prestation en forfait</label>
+                                        </div>
+                                        <!-- -------------------------------------------------------------- -->
+                                        
+                                        <!-- -------------------------------------------------------------- -->
+                                        <!-- PRESTATION EXCLUSIVE OU PERMANENTE -->
+                                        <small class="d-none d-block text-danger text-center fst-italic mt-2" role="alert" id="exclusiveError"></small>
+                                        <div class="btn-group d-flex mt-3 mb-5" role="group" aria-label="Choisir le type de prestation">
+                                            <input type="radio" class="btn-check type-choice" name="exclusive" value="0" id="permanent" aria-errormessage="exclusiveError" autocomplete="off" required>
+                                            <label class="btn btn-radio" for="permanent">Prestation permanente</label>
+                                        
+                                            <input type="radio" class="btn-check type-choice" name="exclusive" value="1" id="exclusive" aria-errormessage="exclusiveError" autocomplete="off">
+                                            <label class="btn btn-radio" for="exclusive">Prestation exclusive</label>
+                                        </div>
+                                        <!-- -------------------------------------------------------------- -->
+                                    </div>
+
+                                    <!-- -------------------------------------------------------------- -->
+                                    <!-- DATES EN CAS DE PRESTATIONS EXCLUSIVES -->
+                                    <div class="exclusive-dates d-none">
+                                        <div class="mb-4">
+                                            <label for="startExclusiveDate" class="form-label me-3">Date de début * :</label>
+                                            <input type="date" class="form-control" id="startExclusiveDate" name="startExclusiveDate" value="" pattern="^\d{4}-\d{2}-\d{2}$">
+                                            <small class="d-none text-danger fst-italic mt-2" role="alert" aria-errormessage="startExclusiveDate" id="startExclusiveDateError"></small>
+                                        </div>
+
+                                        <div class="mb-md-4">
+                                            <label for="endExclusiveDate" class="form-label me-3">Date de fin * :</label>
+                                            <input type="date" class="form-control" id="endExclusiveDate" name="endExclusiveDate" value="" pattern="^\d{4}-\d{2}-\d{2}$">
+                                            <small class="d-none text-danger fst-italic mt-2" role="alert" aria-errormessage="endExclusiveDate" id="endExclusiveDateError"></small>
+                                        </div>
+                                    </div>
+                                    <!-- -------------------------------------------------------------- -->
+                                </fieldset>
+        
+                                <!-- -------------------------------------------------------------- -->
+                                <!-- BOUTON DE VALIDATION -->
+                                <div class="d-flex justify-content-center pb-md-5 my-5">
+                                    <button type="submit" class="btn btn-classic py-2"><i class="bi bi-pencil-fill me-3" aria-hidden="true"></i>Ajouter la prestation</button>
+                                </div>
+                                <!-- -------------------------------------------------------------- -->
+    
+                            </form>
+                        </section>
+                    </div>
+
+                </div>
+
+        </div>
+    </main>
+
+    <!-- ========================================================================================================================================================================== -->
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-around mt-4 mb-4 mb-lg-0 mb-xxl-4 mx-0">
+                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 order-1 d-flex justify-content-md-center mb-4 mb-md-5 mb-lg-4" id="informations">
+                    <ul class="ms-3 ms-md-0">
+                        <li class="fs-4 footerTitle mb-4">Informations</li>
+                        <li class="my-2"><a href="./informations/legal_notice.html" class="footer-link">Mentions légales</a></li>
+                        <li class="my-2"><a href="./construction.html" class="footer-link">Politiques de confidentialité</a></li>
+                        <li class="my-2"><a href="./construction.html" class="footer-link">Conditions générales de vente</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 order-3 order-lg-2 d-flex justify-content-md-center mb-4" id="contact">
+                    <ul class="ms-3 ms-md-0">
+                        <li class="fs-4 footerTitle mb-4">Contact</li>
+                        <li class="my-3"><i class="bi bi-geo-alt me-2"></i> 10 chemin de la Tombelle <br> 02100 Saint
+                            Quentin</li>
+                        <li class="my-3"><a href="mailto: esthetique@gmail.com"><i
+                                    class="bi bi-envelope-at me-2"></i>esthetique@gmail.com</a></li>
+                        <li class="my-3"><i class="bi bi-telephone me-2"></i>07.67.47.68.37</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 order-2 order-lg-3 d-flex justify-content-md-center mb-4 mb-md-5 mb-lg-4" id="websiteNavigation">
+                    <ul class="ms-3 ms-md-0">
+                        <li class="fs-4 footerTitle mb-4">L' Aura Natur'elle</li>
+                        <li class="my-2"><a href="./index.html" class="footer-link">Accueil</a></li>
+                        <li class="my-2"><a href="./main/services_categories.html" class="footer-link">Prestations</a></li>
+                        <li class="my-2"><a href="./main/appointment.html" class="footer-link">Prendre RDV</a></li>
+                        <li class="my-2"><a href="./construction.html" class="footer-link">Carte cadeaux</a></li>
+                        <li class="my-2"><a href="./main/contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xxl-2 order-4 d-flex justify-content-md-center mb-4" id="schedule">
+                    <ul class="ms-3 ms-md-0">
+                        <li class="fs-4 footerTitle mb-4">Horaires</li>
+                        <li class="my-2"><span>Lundi :</span> Fermé</li>
+                        <li class="my-2"><span>Mardi :</span> 10h-18h</li>
+                        <li class="my-2"><span>Mercredi :</span> Fermé</li>
+                        <li class="my-2"><span>Jeudi :</span> 10h-18h</li>
+                        <li class="my-2"><span>Vendredi :</span> 10h-18h</li>
+                        <li class="my-2"><span>Samedi :</span> 10h-18h</li>
+                        <li class="my-2"><span>Dimanche :</span> Fermé</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xxl-2 order-5 d-flex justify-content-center align-items-center"
+                    id="socialNetwork">
+                    <ul class="d-flex flex-xxl-column">
+                        <li class="me-5 me-xxl-0 mb-xxl-5"><a href="https://www.facebook.com/lauranaturellebioetvegan02"
+                                target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Ouvrir la page facebook de L'Aura Natur'elle"><i class="bi bi-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Ouvrir la page instagram de L'Aura Natur'elle"><i
+                                    class="bi bi-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mx-0">
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                    <hr>
+                    <small class="text-center mb-4">© L'Aura Natur'elle 2019 - 2023 - Tous droits réservés</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../public/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/assets/js/script.js"></script>
+
+    <script type="module" src="../public/assets/js/form.js"></script>
+    <script type="module" src="../public/assets/js/services.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K01XHPHL6L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-K01XHPHL6L');
+    </script>
+</body>
+
+</html>
